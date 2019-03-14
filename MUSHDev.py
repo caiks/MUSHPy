@@ -1,4 +1,4 @@
-﻿from AlignmentDevRepa import *
+from AlignmentDevRepa import *
 
 attributes = ([(0,"edible",["edible=e", "poisonous=p"]),
     (1,"cap-shape",["bell=b","conical=c","convex=x","flat=f","knobbed=k","sunken=s"]),
@@ -40,6 +40,13 @@ def names():
 def mushaa(mush):
     nn = names()
     return llaa([(llss([(VarStr(v),ValStr(uu[u[0]])) for (u,(v,uu)) in zip(ss.split(','),nn)]),1) for ss in mush])
+
+# mushIO :: Int -> IO (System, Histogram)
+
+def mushIO():
+    aa = mushaa(open('./agaricus-lepiota.data', 'r').readlines())
+    uu = sys(aa)
+    return (uu,aa)
 
 def aahr(uu,aa):
     return hhhr(uu,aahh(aa))
