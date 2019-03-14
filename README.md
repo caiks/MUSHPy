@@ -29,8 +29,7 @@ python3
 ```py
 from MUSHDev import *
 
-aa = mushaa(open('./agaricus-lepiota.data', 'r').readlines())
-uu = sys(aa)
+(uu,aa) = mushIO()
 vv = uvars(uu)
 vvl = sset([VarStr("edible")])
 vvk = vv - vvl
